@@ -14,7 +14,7 @@ export enum ButtonType{
 
 const HusButton = (props : HusButtonProps) => {
   let _className = 'hus-btn '+ props.btnType;
-  const clickHandler = () => { alert('You Tickled me, Dude!!!') }
+  const clickHandler = () => { alert('You Tickled me, Dude!!!'); }
   return (
     <button className={_className} onClick={clickHandler}>{props.text}</button>
   )

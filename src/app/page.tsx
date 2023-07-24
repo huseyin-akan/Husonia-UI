@@ -8,7 +8,7 @@ export default function Home() {
   )
 }
 
-// Next.js Crash course: 17:28
+// Next.js Crash course: 31.26
 // Next-js : 20:59
 // REsponsive : 21:52
 // Fifa Card will be added to the right side of the hello screen
