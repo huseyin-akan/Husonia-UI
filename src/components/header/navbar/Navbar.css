@@ -1,0 +1,39 @@
+.hus-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.2rem 9%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.hus-logo {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.hus-navbar-item{
+    margin-left:2.1rem;
+    color: var(--text-color);
+    font-size:1.1rem;
+    font-weight: 500;
+    transition: .7s;
+}
+
+.hus-navbar-item:hover,
+.hus-navbar-item.active{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+.hus-navbar-menu-icon{
+    font-size : 3.2rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
