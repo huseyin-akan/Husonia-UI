@@ -1,0 +1,10 @@
+WATCHINGS:
+Next.js Crash course: 31.26 - https://www.youtube.com/watch?v=wm5gMKuwSYk&t=11405s&ab_channel=JavaScriptMastery
+Next-js : 20:59 - https://www.youtube.com/watch?v=pUNSHPyVryU&list=WL&index=8&ab_channel=JavaScriptMastery
+Responsive : 21:52 - https://www.youtube.com/watch?v=sQoiM7i5Nqc&list=WL&index=11&t=18s&ab_channel=Codehal
+
+HUS-TODOS:
+ Fifa Card will be added to the right side of the hello screen
+
+LATER-HUS-TODOS:
+1. Drag and drop cards with animation.
