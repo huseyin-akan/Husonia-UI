@@ -8,4 +8,4 @@ config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatic
 export default function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />
 }
-//TODO-HUS sanırım buna geçmemiz lazım ama şimdik dursun. layout.tsx dosyasına icon ekledik.
+//TODO-HUS sanırım buna geçmemiz lazım ama şimdik dursun. layout.tsx dosyasına icon ekledik. small test
