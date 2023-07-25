@@ -1,9 +1,13 @@
 import React from 'react'
 
-const page = () => {
+export const metadata = {
+  title: 'Mazafaka'
+} 
+
+const Utilities = () => {
   return (
     <div>Hello madafaka</div>
   )
 }
 
-export default page
+export default Utilities
