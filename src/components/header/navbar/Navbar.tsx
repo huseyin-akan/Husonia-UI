@@ -1,6 +1,6 @@
-import { faBars, faBlog, faHome, faMapPin, faMehRollingEyes, faTools } from "@fortawesome/free-solid-svg-icons";
+import Image from 'next/image';
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import "./Navbar.css";
 
 export interface NavbarProps {
@@ -12,9 +12,12 @@ const Navbar = (props: NavbarProps) => {
 
   return (
     <div className="hus-navbar">
-      <a href="/" className="hus-logo">
-        H.Akan
-      </a>
+      <Image
+        src="../../assets/husonia.svg"
+        alt="Logo"
+        width={40}
+        height={40}
+      />
       <FontAwesomeIcon className="hus-navbar-menu-icon" icon={faBars} />
       <nav className="navbar">
         <a href='/' className='hus-navbar-item active'>
