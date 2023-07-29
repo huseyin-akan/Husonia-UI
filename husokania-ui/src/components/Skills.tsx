@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import HusButton, { ButtonType } from './ui/button/HusButton';
 
 export interface Skill{
     name: string;
@@ -45,6 +46,7 @@ const Skills = () => {
             <label htmlFor='skill-rating'> Add Rating</label>
             <input value={skillRating} onChange={(e) => setSkillRating(Number(e.target.value))} type="number" id="skill-rating"></input>
             <button onClick={saveSkill}>Ekle</button>
+            <HusButton text='Ekle' btnType={ButtonType.StandartButton} onClick={saveSkill}/>
         </div>
         {skills}
         </>

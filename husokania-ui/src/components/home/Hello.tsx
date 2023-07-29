@@ -15,8 +15,8 @@ const Hello = () => {
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquid impedit suscipit odio harum id saepe, sint nihil quidem ullam culpa facere ut explicabo molestias, qui itaque quaerat maiores ex labore rem eius est. Quod, doloremque, illum sequi ipsum ea hic velit aliquam odit excepturi quibusdam delectus nulla, nam distinctio porro officia! Voluptate earum ex soluta doloribus, ipsum quos.</p>
             <div className="hus-btn-box">
-                <HusButton text='Hire Me' btnType={ButtonType.OutlinedButton}></HusButton>
-                <HusButton text='Lets Talk' btnType={ButtonType.StandartButton}></HusButton>
+                <HusButton text='Hire Me' onClick={ () => {alert('Hullloooo')}} btnType={ButtonType.OutlinedButton}></HusButton>
+                <HusButton text='Lets Talk' onClick={ () => {alert('Zahaahhaa')}} btnType={ButtonType.StandartButton}></HusButton>
             </div>
         </div>
     </section>

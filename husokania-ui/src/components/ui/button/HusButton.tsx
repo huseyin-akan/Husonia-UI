@@ -1,8 +1,10 @@
+import { MouseEventHandler } from 'react';
 import './HusButton.css';
 
 export interface HusButtonProps{
     text : string;
-    btnType: ButtonType
+    btnType: ButtonType;
+    onClick : MouseEventHandler<HTMLButtonElement>;
 }
 
 export enum ButtonType{
@@ -12,9 +14,8 @@ export enum ButtonType{
 
 const HusButton = (props : HusButtonProps) => {
   let _className = 'hus-btn '+ props.btnType;
-  const clickHandler = () => { alert('You Tickled me, Dude!!!'); }
   return (
-    <button className={_className} onClick={clickHandler}>{props.text}</button>
+    <button className={_className} onClick={props.onClick}>{props.text}</button>
   )
 }
 
