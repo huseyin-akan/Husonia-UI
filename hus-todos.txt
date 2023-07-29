@@ -7,3 +7,26 @@ HUS-TODOS:
 
 LATER-HUS-TODOS:
 1. Drag and drop cards with animation.
+2. We should write a mongoose repository which handles all basic shites maybe? Or at least we should somehow break the dependency to mongoose by writing interface db repositories.
+
+
+SEARCH NOTES:
+1. Strict Mode'dan dolayı aşağıdaki useEffect 2 kez çalışıyor. PROD'a çıkınca 2 kez çalışmıcak dert etme. Dependency olarak [] boş array verdiğimiz için sayfa ayağa kalkınca we are here yazar. we sayfa kapanınca da clean up çalışır. 
+
+useEffect ( () => {
+    console.log('we are here');
+
+    return () => {
+        console.log('cleanup')
+    }
+}, [] ) 
+
+2. Not olarak yazalım, useEffect() içinde async method çağıramıyoruz. Fakat bir yolu var. Böylece asycn çağırmış oluyoruz: 
+useEffect( () =>{
+    async functon fetchData() {
+        await ...
+    }
+    fetchData();
+})
+
+3. typescript te type nedir tam olarak. class ve interface'ten farkı ne?

@@ -43,10 +43,20 @@
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
-  filter: drop-shadow(0 0 3em #6edcfbaa);
+  filter: drop-shadow(0 0 2em #6edcfbaa);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.hus-neon{
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 700;
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #6edcfbaa, 0 0 30px #6edcfbaa, 0 0 40px #6edcfbaa, 0 0 55px #6edcfbaa, 0 0 75px #6edcfbaa;
+}
+
+.hus-navbar-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes logo-spin {
