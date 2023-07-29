@@ -1,6 +1,6 @@
 WATCHINGS:
-MERN Stack : 35:21 - webdevcody - mongoose ayarları yapıyoduk en son.
-Responsive : 21:52 - https://www.youtube.com/watch?v=sQoiM7i5Nqc&list=WL&index=11&t=18s&ab_channel=Codehal
+MERN Stack : 01:21:19 - https://www.youtube.com/watch?v=G_XyAfcLeqI - cors yazdık
+Responsive : 00:21:52 - https://www.youtube.com/watch?v=sQoiM7i5Nqc&list=WL&index=11&t=18s&ab_channel=Codehal
 
 HUS-TODOS:
  Fifa Card will be added to the right side of the hello screen

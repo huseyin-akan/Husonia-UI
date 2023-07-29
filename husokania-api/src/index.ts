@@ -1,6 +1,6 @@
 import {config} from 'dotenv';
 config();
-
+import cors from 'cors';
 import express, {Request, Response} from 'express';
 import mongoose from 'mongoose';
 import Product from './models/product';
@@ -8,6 +8,7 @@ import Product from './models/product';
 const app = express();
 const PORT = 5069;
 
+app.use(cors({origin : process.env.ALLOWED_ORIGIN }) ) 
 app.use(express.json() );   //Request içinde gelen body datasını json'a çevirir. req.body'den okuyabilirsin.
 
 app.get('/', (req : Request, res: Response) => {
