@@ -1,7 +1,5 @@
-'use client'
-import React from 'react'
 import HusButton, { ButtonType } from '../ui/button/HusButton';
-import 'src/components/home/Hello.css';
+import './Hello.css';
 
 const Hello = () => {
   return (

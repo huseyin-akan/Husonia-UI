@@ -1,6 +1,4 @@
-'use client';
-import React from 'react'
-import 'src/components/ui/button/HusButton.css';
+import './HusButton.css';
 
 export interface HusButtonProps{
     text : string;
