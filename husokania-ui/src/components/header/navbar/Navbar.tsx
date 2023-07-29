@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import reactLogo from '../../../assets/react.svg';
+import { Link } from "react-router-dom";
 
 export interface NavbarProps {
   title: string;

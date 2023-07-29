@@ -23,12 +23,19 @@ app.get('/skills', async (req : Request, res: Response) => {
 })
 
 app.post('/skills', async (req : Request, res: Response) => {
-    const newSkill = new Skill({
-        name : req.body.name,
-        rating  : req.body.rating
+    const {skillId} = req.params;
+
+    const deletedSkill = await Skill.findByIdAndDelete(skillId);
+    
+    res.json(deletedSkill);
+})
+
+app.delete('/skills/:skillId', async (req : Request, res: Response) => {
+    const newProduct = new Product({
+        name : "tOMAT"
     });
-    const createdSkill = await newSkill.save();
-    res.json(createdSkill._id);
+    const createdProduct = await newProduct.save();
+    res.json(createdProduct._id);
 })
 
 app.post('/products', async (req : Request, res: Response) => {
@@ -38,6 +45,8 @@ app.post('/products', async (req : Request, res: Response) => {
     const createdProduct = await newProduct.save();
     res.json(createdProduct._id);
 })
+
+
 
 mongoose.connect(process.env.MONGO_URL!)
 .then( () => {
