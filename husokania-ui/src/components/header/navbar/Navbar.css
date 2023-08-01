@@ -20,6 +20,7 @@
 .hus-navbar-item{
     margin-left:2.1rem;
     color: var(--text-color);
+    text-decoration: none;
     font-size:1.1rem;
     font-weight: 500;
     transition: .7s;

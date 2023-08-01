@@ -1,11 +1,21 @@
+.hus-container{
+    display:flex;
+}
+
+.hus-left-content{
+    flex:70%;
+    padding: 10px;
+}
+
+.hus-right-content{
+    flex:30%;
+    padding: 10px;
+}
+
 .hus-hello{
     display: flex;
     align-items: center;
     padding: 0 9%;
-}
-
-.hus-hello-content{
-    max-width:60rem;
 }
 
 .hus-hello-content h1{
@@ -37,4 +47,50 @@
     justify-content: space-around;
     width: 34.5rem;
     height:4rem;
+}
+
+.hus-social-media{
+    position : absolute;
+    bottom: 4rem;
+    /* TODO-HUS yukarıyı beğenmedim */
+    display: flex;
+    justify-content: space-between;
+}
+
+.hus-social-media a{
+    position : relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background : transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin-right:1rem;
+}
+
+.hus-social-media a:hover{
+    color: var(--bg-color);
+}
+
+.hus-social-media a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.hus-social-media a:hover::before{
+    width: 100%;
 }

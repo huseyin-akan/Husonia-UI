@@ -1,6 +1,5 @@
 import "./Navbar.css";
 import reactLogo from '../../../assets/react.svg';
-import { Link } from "react-router-dom";
 
 export interface NavbarProps {
   title: string;
@@ -15,8 +14,10 @@ const Navbar = (props: NavbarProps) => {
         </a>
         <span className="hus-neon">Husoka</span>
       </div>
-      
-      {/* <FontAwesomeIcon className="hus-navbar-menu-icon" icon={faBars} /> */}
+      <div className="hus-navbar-menu-icon">
+        <i className="fa-solid fa-bars"></i>
+      </div>
+
       <nav className="navbar">
         <a href='/' className='hus-navbar-item active'>
           Home
@@ -27,7 +28,7 @@ const Navbar = (props: NavbarProps) => {
         <a href='/utilities' className='hus-navbar-item'>
           Utilities
         </a>
-        <a href='/' className='hus-navbar-item'>
+        <a href='/about-me' className='hus-navbar-item'>
           About Me
         </a>
         <a href='/' className='hus-navbar-item'>
