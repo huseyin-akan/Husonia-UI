@@ -1,6 +1,6 @@
 WATCHINGS:
-Responsive : 00:28:11 - https://www.youtube.com/watch?v=sQoiM7i5Nqc&list=WL&index=11&t=18s&ab_channel=Codehal
-//about-contentte kaldık
+Responsive : 00:53:09 - https://www.youtube.com/watch?v=sQoiM7i5Nqc&list=WL&index=11&t=18s&ab_channel=Codehal
+//contact-me'de kaldık
 
 HUS-TODOS:
  Fifa Card will be added to the right side of the hello screen

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import HusButton, { ButtonType } from '../ui/button/HusButton';
 import { ObjectId } from 'mongoose';
+import './Skills.scss';
 
 export type Skill = {
     name: string;
@@ -51,6 +52,67 @@ const Skills = () => {
 
     return (
         <>
+            <section className="hus-skills" id="hus-skills">
+                <h2 className="heading">My <span>Skills</span></h2>
+                <div className="skills-row">
+                    <div className="skills-col">
+                        <h3 className="title">Coding Skills</h3>
+                        <div className="skills-box">
+                            <div className="skills-content">
+                                <div className="progress">
+                                    <h3>HTML <span>90%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+
+                                <div className="progress">
+                                    <h3>HTML <span>90%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+
+                                <div className="progress">
+                                    <h3>HTML <span>90%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+
+                                <div className="progress">
+                                    <h3>HTML <span>90%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="skills-col">
+                        <h3 className="title">Coding Skills</h3>
+                        <div className="skills-box">
+                            <div className="skills-content">
+                                <div className="progress">
+                                    <h3>HTML <span>90%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+
+                                <div className="progress">
+                                    <h3>HTML <span>90%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+
+                                <div className="progress">
+                                    <h3>HTML <span>90%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+
+                                <div className="progress">
+                                    <h3>HTML <span>90%</span></h3>
+                                    <div className="bar"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
             <div>Skills Page
                 <label htmlFor='skill-name'> Add Name</label>
                 <input value={skillName} onChange={(e) => setSkillName(e.target.value)} type="text" id="skill-name"></input>
