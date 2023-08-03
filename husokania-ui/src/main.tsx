@@ -6,6 +6,7 @@ import Navbar from './components/header/navbar/Navbar';
 import Home from './components/home/Home';
 import AboutMe from './components/about-me/AboutMe';
 import ContactMe from './components/contact-me/ContactMe';
+import Footer from './components/footer/Footer';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <div className="hus-routed-content">
     <RouterProvider router={router} />
     </div>
+    <Footer/>
     
   </React.StrictMode>,
 )
