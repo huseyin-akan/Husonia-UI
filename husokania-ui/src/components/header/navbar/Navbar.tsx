@@ -31,7 +31,7 @@ const Navbar = (props: NavbarProps) => {
         <a href='/about-me' className='hus-navbar-item'>
           About Me
         </a>
-        <a href='/' className='hus-navbar-item'>
+        <a href='/contact-me' className='hus-navbar-item'>
           Contact
         </a>
       </nav>
