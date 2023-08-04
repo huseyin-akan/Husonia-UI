@@ -1,11 +1,29 @@
 import "./Navbar.css";
 import reactLogo from '../../../assets/react.svg';
+import { useState } from "react";
 
-export interface NavbarProps {
-  title: string;
+
+export interface NavbarItem{
+  displayName :string;
+  routeUrl :string;
 }
 
-const Navbar = (props: NavbarProps) => {
+const Navbar :React.FC = () => {
+
+  const navbarItems : NavbarItem[] = [
+    {displayName: 'Home', routeUrl: '/'},
+    {displayName: 'Blog', routeUrl: '/blog'},
+    {displayName: 'Utilities', routeUrl: '/utilities'},
+    {displayName: 'About Me', routeUrl: '/about-me'},
+    {displayName: 'Contact', routeUrl: '/contact-me'},
+  ]
+
+  const [activeItem, setActiveItem] = useState<NavbarItem>(navbarItems[0]);
+
+  const handleItemClick = (item: NavbarItem) => {
+    setActiveItem(item);
+  };
+
   return (
     <div className="hus-navbar">
       <div className="hus-navbar-left">
@@ -19,21 +37,12 @@ const Navbar = (props: NavbarProps) => {
       </div>
 
       <nav className="navbar">
-        <a href='/' className='hus-navbar-item active'>
-          Home
-        </a>
-        <a href='/' className='hus-navbar-item'>
-          Blog
-        </a>
-        <a href='/utilities' className='hus-navbar-item'>
-          Utilities
-        </a>
-        <a href='/about-me' className='hus-navbar-item'>
-          About Me
-        </a>
-        <a href='/contact-me' className='hus-navbar-item'>
-          Contact
-        </a>
+        {navbarItems.map((item : NavbarItem)  => 
+          <a href={item.routeUrl} className={activeItem.routeUrl === item.routeUrl ? 'hus-navbar-item active' : 'hus-navbar-item'} onClick={() => handleItemClick(item)}>
+          {item.displayName} 
+          </a>
+        )}
+        
       </nav>
     </div>
   );

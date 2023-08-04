@@ -9,7 +9,8 @@ import Skill from './models/skill';
 const app = express();
 const PORT = 5069;
 
-app.use(cors({origin : process.env.ALLOWED_ORIGIN }) ) 
+// app.use(cors({origin : process.env.ALLOWED_ORIGIN }) ) 
+app.use(cors() ) 
 app.use(express.json() );   //Request içinde gelen body datasını json'a çevirir. req.body'den okuyabilirsin.
 
 app.get('/', (req : Request, res: Response) => {
@@ -45,8 +46,6 @@ app.post('/products', async (req : Request, res: Response) => {
     const createdProduct = await newProduct.save();
     res.json(createdProduct._id);
 })
-
-
 
 mongoose.connect(process.env.MONGO_URL!)
 .then( () => {

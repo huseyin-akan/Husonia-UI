@@ -11,6 +11,10 @@
   z-index: 100;
 }
 
+.hus-navbar.sticky{
+  background: var(--bg-color);
+}
+
 .hus-logo {
   font-size: 1.8rem;
   color: var(--text-color);
