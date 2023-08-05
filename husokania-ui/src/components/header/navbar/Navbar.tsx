@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import reactLogo from '../../../assets/react.svg';
 import { useState } from "react";
-
+import { NavLink } from "react-router-dom";
 
 export interface NavbarItem{
   displayName :string;
@@ -37,10 +37,11 @@ const Navbar :React.FC = () => {
       </div>
 
       <nav className="navbar">
-        {navbarItems.map((item : NavbarItem)  => 
-          <a href={item.routeUrl} className={activeItem.routeUrl === item.routeUrl ? 'hus-navbar-item active' : 'hus-navbar-item'} onClick={() => handleItemClick(item)}>
+        {navbarItems.map((item : NavbarItem, index : number)  => 
+          <NavLink key={index} to={item.routeUrl} className={activeItem.routeUrl === item.routeUrl ? 'hus-navbar-item active' : 'hus-navbar-item'} 
+          onClick={() => handleItemClick(item)}>
           {item.displayName} 
-          </a>
+          </NavLink>
         )}
         
       </nav>

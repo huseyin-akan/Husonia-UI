@@ -1,11 +1,16 @@
 WATCHINGS:
 Responsive : 01:06:27 - https://www.youtube.com/watch?v=sQoiM7i5Nqc&list=WL&index=11&t=18s&ab_channel=Codehal
 //JS'e geçtik sonunda
+Udemy - React Kursu : 23. Video'da kaldık. 
 
 LATER-HUS-TODOS:
 1. Drag and drop cards with animation.
 2. We should write a mongoose repository which handles all basic shites maybe? Or at least we should somehow break the dependency to mongoose by writing interface db repositories.
 
+ERRORS, BUGS:
+1. Şu an router çalışmıyor.
+https://reactrouter.com/en/main/start/tutorial
+2.
 
 SEARCH NOTES:
 1. Strict Mode'dan dolayı aşağıdaki useEffect 2 kez çalışıyor. PROD'a çıkınca 2 kez çalışmıcak dert etme. Dependency olarak [] boş array verdiğimiz için sayfa ayağa kalkınca we are here yazar. we sayfa kapanınca da clean up çalışır. 

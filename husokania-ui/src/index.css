@@ -40,10 +40,6 @@ body {
   color: var(--text-color);
 }
 
-.hus-routed-content{
-  margin-top:10rem;
-}
-
 /* TODO-HUS buton configürasyonu taşınacak */
 /* button {
   border-radius: 8px;
