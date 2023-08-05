@@ -28,12 +28,9 @@ const Skills = () => {
             method: 'GET'
         })
 
-        let allSkills: Skill[] = await response.json();
+        const allSkills: Skill[] = await response.json();
         const extractedSkills = allSkills.map(({ _id, name, rating }) => ({ _id, name, rating }));
-        let skillRows = '';
-        for (let i = 0; i < allSkills.length; i++) {
-            skillRows += `<div>${allSkills[i].name} - ${allSkills[i].rating} </div>`;
-        }
+
         setSkills(extractedSkills)
     }
 

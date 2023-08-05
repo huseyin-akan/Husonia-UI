@@ -1,9 +1,9 @@
 import "./Navbar.css";
 import reactLogo from '../../../assets/react.svg';
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation  } from "react-router-dom";
 
-export interface NavbarItem{
+interface NavbarItem{
   displayName :string;
   routeUrl :string;
 }
@@ -18,12 +18,18 @@ const Navbar :React.FC = () => {
     {displayName: 'Contact', routeUrl: '/contact-me'},
   ]
 
-  const [activeItem, setActiveItem] = useState<NavbarItem>(navbarItems[0]);
+  const location = useLocation();
+  const currentRoute = location.pathname; //TODO-HUS burada sallıyorum blog/1/2 gibi bir sayfalama olunca burası nasıl çalışacak. 
+  //TODO-HUS yine aynı şekilde /blog/husolasmanin-onemi seklinde olunca ne olacak
+  //TODO-HUS yine aynı şekilde navbarda görüntülenmeyen bir route olursa ne olacak? Örnek : /husolaşmak ama navbarda yokken router'da var.
+  const theCurrentActiveItem = navbarItems.find(x => x.routeUrl === currentRoute)
+  if(theCurrentActiveItem === undefined) throw new Error('Unexpected Route') //TODO-HUS Başka bir şey mi yapsak burada?
+
+  const [activeItem, setActiveItem] = useState<NavbarItem>(theCurrentActiveItem);
 
   const handleItemClick = (item: NavbarItem) => {
     setActiveItem(item);
   };
-
   return (
     <div className="hus-navbar">
       <div className="hus-navbar-left">
@@ -37,11 +43,16 @@ const Navbar :React.FC = () => {
       </div>
 
       <nav className="navbar">
-        {navbarItems.map((item : NavbarItem, index : number)  => 
-          <NavLink key={index} to={item.routeUrl} className={activeItem.routeUrl === item.routeUrl ? 'hus-navbar-item active' : 'hus-navbar-item'} 
+        {navbarItems.map((item : NavbarItem)  => {
+          console.log(item);
+          console.log(activeItem);
+          console.log(activeItem.routeUrl === item.routeUrl);
+          return <NavLink key={item.routeUrl} to={item.routeUrl} className={activeItem.routeUrl === item.routeUrl ? 'hus-navbar-item active' : 'hus-navbar-item'} 
           onClick={() => handleItemClick(item)}>
           {item.displayName} 
           </NavLink>
+        }
+          
         )}
         
       </nav>

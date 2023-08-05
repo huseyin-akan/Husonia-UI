@@ -1,7 +1,19 @@
 import './AboutMe.scss';
 import profilePic from '../../assets/nakamura.gif';
+import HusButton, { ButtonType } from '../ui/button/HusButton';
+import { useSpinner } from '../ui/spinner/HusSpinnerContext';
 
 const AboutMe = () => {
+
+    const { toggleSpinner } = useSpinner();
+    
+    const setSpinner = () => {
+        toggleSpinner(true);
+        setTimeout(() => {
+            toggleSpinner(false);
+          }, 3000);
+    }
+
     return (
         <section>
             <h2 className="heading">About <span>Me</span></h2>
@@ -11,6 +23,7 @@ const AboutMe = () => {
                     <span className="circle-spin"></span>
                 </div>
             </div>
+            <HusButton text="OpenSpinner" btnType={ButtonType.StandartButton} onClick={setSpinner}/>
         </section>
     )
 }
