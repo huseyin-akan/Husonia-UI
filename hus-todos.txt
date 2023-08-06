@@ -1,15 +1,14 @@
 WATCHINGS:
-Responsive : 01:06:27 - https://www.youtube.com/watch?v=sQoiM7i5Nqc&list=WL&index=11&t=18s&ab_channel=Codehal
-//JS'e geçtik sonunda
-Udemy - React Kursu : 23. Video'da kaldık. 
+3. Responsive : 01:15:00 - https://www.youtube.com/watch?v=sQoiM7i5Nqc&list=WL&index=11&t=18s&ab_channel=Codehal
+//Navbar ikonuna tıklanınca açılacak ekran tasarımına geçiyoruz. Pek beğenmedim gibi ama değiştiririz Sorun değil.
+4. Udemy - React Kursu : 50. Video'da kaldık.
+6.  
 
 LATER-HUS-TODOS:
 1. Drag and drop cards with animation.
 2. We should write a mongoose repository which handles all basic shites maybe? Or at least we should somehow break the dependency to mongoose by writing interface db repositories.
 
 ERRORS, BUGS:
-1. Şu an router çalışmıyor.
-https://reactrouter.com/en/main/start/tutorial
 2.
 
 SEARCH NOTES:
@@ -23,7 +22,7 @@ useEffect ( () => {
     }
 }, [] ) 
 
-2. Not olarak yazalım, useEffect() içinde async method çağıramıyoruz. Fakat bir yolu var. Böylece asycn çağırmış oluyoruz: 
+2. Not olarak yazalım, useEffect() içinde async method çağıramıyoruz. Fakat bir yolu var. Böylece async çağırmış oluyoruz: 
 useEffect( () =>{
     async functon fetchData() {
         await ...

@@ -40,7 +40,6 @@
     font-size : 3.2rem;
     color: var(--text-color);
     cursor: pointer;
-    display: none;
 }
 
 .logo {

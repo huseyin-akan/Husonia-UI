@@ -26,7 +26,7 @@
 }
 
 html{
-  font-size : 62.5;
+  /* font-size : 62.5; */
   overflow-x: hidden;
 }
 
@@ -39,6 +39,54 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
 }
+
+.hus-navbar-menu-icon{
+  display: none;
+}
+
+
+
+@media (max-width:991px) {
+  .header{
+    padding: 2rem 4%;
+  }
+  
+  section{
+    padding: 10rem 4% 2rem;
+  }
+}
+
+@media (max-width: 768px){
+  .header{
+    background-color: var(--bg-color);
+  }
+
+  .hus-navbar-menu-icon{
+    display: block;
+  }
+
+  .hus-navbar-right{
+    display:none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* TODO-HUS buton configürasyonu taşınacak */
 /* button {

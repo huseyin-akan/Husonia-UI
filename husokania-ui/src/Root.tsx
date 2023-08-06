@@ -7,10 +7,10 @@ const Root = () => {
   return (
     <>
       <HusSpinnerProvider>
-        <Header />
+        <Header></Header>
         {/* //Children of Root element will be rendered here */}
-        <Outlet />
-        <Footer />
+        <Outlet></Outlet>
+        <Footer></Footer>
       </HusSpinnerProvider>
     </>
   );

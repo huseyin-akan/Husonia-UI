@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { MouseEventHandler } from 'react';
 import './HusButton.css';
 
@@ -13,7 +14,7 @@ export enum ButtonType{
 }
 
 const HusButton = (props : HusButtonProps) => {
-  let _className = 'hus-btn '+ props.btnType;
+  const _className = 'hus-btn '+ props.btnType;
   return (
     <button className={_className} onClick={props.onClick}>{props.text}</button>
   )
