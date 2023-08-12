@@ -13,7 +13,7 @@ const Hello = () => {
                             <div className="text-animate">
                                 <h3>Full Stack Developer</h3>
                             </div>
-                            <div className="text-animate">
+                            <div className="text-animate2">
                                 <h3>Full Stack Developer</h3>
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquid impedit suscipit odio harum id saepe, sint nihil quidem ullam culpa facere ut explicabo molestias, qui itaque quaerat maiores ex labore rem eius est. Quod, doloremque, illum sequi ipsum ea hic velit aliquam odit excepturi quibusdam delectus nulla, nam distinctio porro officia! Voluptate earum ex soluta doloribus, ipsum quos.</p>

@@ -7,6 +7,7 @@ WATCHINGS:
 LATER-HUS-TODOS:
 1. Drag and drop cards with animation.
 2. We should write a mongoose repository which handles all basic shites maybe? Or at least we should somehow break the dependency to mongoose by writing interface db repositories.
+3. Navbar biseytasarim.com daki gibi yapılacak. Aşağı indiğimizde 
 
 ERRORS, BUGS:
 2.
