@@ -28,6 +28,7 @@
     font-size:1.1rem;
     font-weight: 500;
     transition: .7s;
+    width: max-content;
 }
 
 .hus-navbar-item:hover,
@@ -37,6 +38,7 @@
 }
 
 .hus-navbar-menu-icon{
+    display: none;
     font-size : 3.2rem;
     color: var(--text-color);
     cursor: pointer;
@@ -75,5 +77,39 @@ text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #6edcfbaa, 0 0
 @media (prefers-reduced-motion: no-preference) {
   .logo {
     animation: logo-spin infinite 20s linear;
+  }
+}
+
+@media (max-width : 768px){
+  .hus-navbar{
+    padding:1rem 4%;
+    transition: .25s ease;
+    transition-delay: .25s;
+  }
+  
+  .hus-navbar-menu-icon{
+    display: block;
+  }
+  
+  .hus-navbar-right{
+    display: none;
+  }
+
+  .hus-navbar-right.active {
+    position: absolute;
+    left:0;
+    top:100px;
+    width:100%;
+    display: block;
+    background-color: var(--bg-color);
+    transition-delay: .2s;
+    padding:2rem;
+    box-shadow : 0 .5rem 1rem rgba(0, 0, 0, 2);
+  }
+
+  .hus-navbar-item{
+    display: block;
+    font-size: 2rem;
+    margin:3rem 0;
   }
 }

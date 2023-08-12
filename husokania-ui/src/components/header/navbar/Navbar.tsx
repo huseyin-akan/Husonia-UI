@@ -9,6 +9,9 @@ interface NavbarItem {
 }
 
 const Navbar: React.FC = () => {
+
+  const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
+
   const navbarItems: NavbarItem[] = [
     { displayName: "Home", routeUrl: "/" },
     { displayName: "Blog", routeUrl: "/blog" },
@@ -16,6 +19,11 @@ const Navbar: React.FC = () => {
     { displayName: "About Me", routeUrl: "/about-me" },
     { displayName: "Contact", routeUrl: "/contact-me" },
   ];
+
+  const rightNavClass = isSideMenuOpen ? "hus-navbar-right active" : "hus-navbar-right";
+  const toggleSideMenu = () => {
+    setIsSideMenuOpen(!isSideMenuOpen);
+  }
 
   const location = useLocation();
   const currentRoute = location.pathname; //TODO-HUS burada sallıyorum blog/1/2 gibi bir sayfalama olunca burası nasıl çalışacak.
@@ -31,7 +39,10 @@ const Navbar: React.FC = () => {
 
   const handleItemClick = (item: NavbarItem) => {
     setActiveItem(item);
+    setIsSideMenuOpen(false);
   };
+
+  //TODO-HUS hamburgere tıklayınca x gelsin.
 
   return (
     <div className="hus-navbar">
@@ -41,11 +52,12 @@ const Navbar: React.FC = () => {
         </a>
         <span className="hus-neon">Husoka</span>
       </div>
-      <div className="hus-navbar-menu-icon">
+      
+      <div className="hus-navbar-menu-icon" onClick={toggleSideMenu}>
         <i className="fa-solid fa-bars"></i>
       </div>
 
-      <nav className="hus-navbar-right">
+      <nav className={rightNavClass}>
           {navbarItems.map((item: NavbarItem) => (
               <NavLink
                 key={item.routeUrl}

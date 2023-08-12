@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import HusButton, { ButtonType } from '../ui/button/HusButton';
+import HusButton, { ButtonType } from '../UI/button/HusButton';
 import { ObjectId } from 'mongoose';
 import './Skills.scss';
 
@@ -14,6 +14,8 @@ const Skills = () => {
     const [skills, setSkills] = useState<Skill []>([]);
     const [skillName, setSkillName] = useState('');
     const [skillRating, setSkillRating] = useState(0);
+
+    
 
     //Sayfa yüklenince skilleri getirecek.
     useEffect(() => {
@@ -47,8 +49,16 @@ const Skills = () => {
         await getSkills();
     }
 
+    const [product, setProduct] = useState<Product>({productName: 'husoka', categoryId: 3})
+    type Product = {productName: string, categoryId: number}
+    const inputChangeHandler = (identifier : string, value : string) => {
+        if(identifier === 'productName') setProduct( (previousValue) => {return {...previousValue, productName : value}})
+        else if (identifier === 'categoryId') setProduct( (previousValue) => {return {...previousValue, categoryId : Number(value)}});
+    }
+
     return (
         <>
+        <input type="text" value={product.productName} onChange={(event) => inputChangeHandler('productName', event.target.value) }></input>
             <section className="hus-skills" id="hus-skills">
                 <h2 className="heading">My <span>Skills</span></h2>
                 <div className="skills-row">

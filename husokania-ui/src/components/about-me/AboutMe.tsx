@@ -1,7 +1,7 @@
 import './AboutMe.scss';
 import profilePic from '../../assets/nakamura.gif';
-import HusButton, { ButtonType } from '../ui/button/HusButton';
-import { useSpinner } from '../ui/spinner/HusSpinnerContext';
+import HusButton, { ButtonType } from '../UI/button/HusButton';
+import { useSpinner } from '../UI/spinner/HusSpinnerContext';
 
 const AboutMe = () => {
 

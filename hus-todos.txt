@@ -1,7 +1,7 @@
 WATCHINGS:
 3. Responsive : 01:15:00 - https://www.youtube.com/watch?v=sQoiM7i5Nqc&list=WL&index=11&t=18s&ab_channel=Codehal
 //Navbar ikonuna tıklanınca açılacak ekran tasarımına geçiyoruz. Pek beğenmedim gibi ama değiştiririz Sorun değil.
-4. Udemy - React Kursu : 50. Video'da kaldık.
+4. Udemy - React Kursu : 97. Video'da kaldık. 
 6.  
 
 LATER-HUS-TODOS:

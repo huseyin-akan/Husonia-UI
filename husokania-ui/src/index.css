@@ -40,12 +40,6 @@ body {
   color: var(--text-color);
 }
 
-.hus-navbar-menu-icon{
-  display: none;
-}
-
-
-
 @media (max-width:991px) {
   .header{
     padding: 2rem 4%;
@@ -59,14 +53,6 @@ body {
 @media (max-width: 768px){
   .header{
     background-color: var(--bg-color);
-  }
-
-  .hus-navbar-menu-icon{
-    display: block;
-  }
-
-  .hus-navbar-right{
-    display:none;
   }
 }
 

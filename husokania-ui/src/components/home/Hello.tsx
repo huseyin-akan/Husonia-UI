@@ -1,4 +1,4 @@
-import HusButton, { ButtonType } from '../ui/button/HusButton';
+import HusButton, { ButtonType } from '../UI/button/HusButton';
 import './Hello.css';
 import SkillCard from './SkillCard';
 

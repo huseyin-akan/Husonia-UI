@@ -1,5 +1,6 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useState } from 'react';
-import HusSpinner from './HusSpinner';
+import HusSpinner from './HusSpinner.tsx';
 
 type SpinnerContextType = {
   toggleSpinner: (show: boolean) => void;

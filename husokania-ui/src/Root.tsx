@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import { HusSpinnerProvider } from "./components/ui/spinner/HusSpinnerContext";
+import { HusSpinnerProvider } from "./components/UI/spinner/HusSpinnerContext";
 
 const Root = () => {
   return (
