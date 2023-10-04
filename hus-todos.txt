@@ -1,6 +1,6 @@
 WATCHINGS:
-3. Responsive : 01:15:00 - https://www.youtube.com/watch?v=sQoiM7i5Nqc&list=WL&index=11&t=18s&ab_channel=Codehal
-//Navbar ikonuna tıklanınca açılacak ekran tasarımına geçiyoruz. Pek beğenmedim gibi ama değiştiririz Sorun değil.
+3. Responsive : 01:34:20 - https://www.youtube.com/watch?v=sQoiM7i5Nqc&list=WL&index=11&t=18s&ab_channel=Codehal
+//Ekranda açılan elemanlar soldan sağa doğru bir animasyonla yükleniyormuş gibi geliyor. Bunu şimdilik sadece skills kısmına yazıcaz. Adam tüm siteye yazıyor sen sadece skills kısmına ekle bakalım
 4. Udemy - React Kursu : 97. Video'da kaldık. 
 6.  
 
@@ -8,6 +8,8 @@ LATER-HUS-TODOS:
 1. Drag and drop cards with animation.
 2. We should write a mongoose repository which handles all basic shites maybe? Or at least we should somehow break the dependency to mongoose by writing interface db repositories.
 3. Navbar biseytasarim.com daki gibi yapılacak. Aşağı indiğimizde 
+4. Yukarıdaki Husoka Yazısını kayan yazı animasyonu yapabiliriz aslında sanki.
+5. 
 
 ERRORS, BUGS:
 2.

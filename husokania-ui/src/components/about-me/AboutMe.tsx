@@ -2,16 +2,21 @@ import './AboutMe.scss';
 import profilePic from '../../assets/nakamura.gif';
 import HusButton, { ButtonType } from '../UI/button/HusButton';
 import { useSpinner } from '../UI/spinner/HusSpinnerContext';
+import { ToastService } from '../../services/toastrService';
 
 const AboutMe = () => {
-
+    const toastService = new ToastService();
     const { toggleSpinner } = useSpinner();
     
     const setSpinner = () => {
         toggleSpinner(true);
+        
+        toastService.showErrorMessage("Ahanda buradayık.");
+        toastService.showSuccessMessage("Ahanda buradayık.");
+        
         setTimeout(() => {
             toggleSpinner(false);
-          }, 3000);
+        }, 3000);
     }
 
     return (
